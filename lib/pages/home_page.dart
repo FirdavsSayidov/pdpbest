@@ -13,15 +13,55 @@ class _HomePageState extends State<HomePage> {   int count = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+   body: Column(
+     children: [
+       Expanded(flex: 1,
+           child:Container(
+             color: Colors.blue,
+             child: Row(
+               children: [
+                 Expanded(flex: 6,
+                     child:
+                     Container(
+                   color: Colors.blueAccent,
 
-      body: Center(
-        child:Image(
-          width: 500,
-            height: 700,
-            fit: BoxFit.cover,
-            image: AssetImage('assets/images/ic_image3.jpg'),
-      ),
-      ),
+
+                 ),),
+                 Expanded(flex: 2,
+                     child: Container(
+                   color: Colors.red,
+                 )),
+                 Expanded( flex: 3,
+                     child: Container(
+                   color: Colors.amber,
+                 ))
+               ],
+             ),
+           ),
+       ),
+       Expanded(
+         flex: 3,
+         child:
+       Container(
+         color: Colors.amber,
+         child: Row(
+           children: [
+             Expanded( flex: 6,
+               child: Container(
+               color: Colors.blue,
+
+             ),),
+             Expanded( flex: 2,
+               child:Container(
+               color:Colors.red,
+             ),),
+           ],
+         ),
+
+
+       ),),
+     ],
+   ),
     );
   }
 }

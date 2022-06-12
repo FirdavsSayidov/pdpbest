@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.pdpbest">
    <application
-        android:label="pdpbest"
+        android:label="Girl"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
