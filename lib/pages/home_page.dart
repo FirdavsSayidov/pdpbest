@@ -13,26 +13,14 @@ class _HomePageState extends State<HomePage> {   int count = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title:Center(child: Text('Pdp Best',style: TextStyle(color:Colors.red,fontSize: 25,fontWeight: FontWeight.normal),)),
-        actions: [
-          Icon(Icons.notifications),
-          SizedBox(width: 16,),
-        ],
-      ),
+
       body: Center(
-        child:Text("Welcome to Home "+count.toString(),style: TextStyle(color: Colors.blue,fontSize: 40),),
-
-
+        child:Image(
+          width: 500,
+            height: 700,
+            fit: BoxFit.cover,
+            image: AssetImage('assets/images/ic_image3.jpg'),
       ),
-      floatingActionButton: FloatingActionButton(
-        elevation: 10.0,
-        child: Icon(Icons.add),
-        onPressed:(){
-         setState((){
-           count++;
-         });
-        },
       ),
     );
   }
